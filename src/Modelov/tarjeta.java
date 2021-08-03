@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 package Modelov;
+//import Modelov.persona;
 
 /**
  *
  * @author Usuaria
  */
-public class tarjeta extends persona {
-    private String no_tarjeta, uso;
+public class tarjeta extends persona  {
+    //persona prs = new persona();
+      private String no_tarjeta, uso;
 
     public String getNo_tarjeta() {
         return no_tarjeta;
@@ -35,9 +37,12 @@ public class tarjeta extends persona {
   System.out.println("Apellido: " + this.getApellido() );
   System.out.println("Direccion: " + this.getDireccion() );
   System.out.println("Telefono: " + this.getTelefono() );
-  System.out.println("Fecha Nacimiento: " + this.getFecha_nacimiento() );
+  System.out.println("Dia: " + this.getDia() );
+  System.out.println("Mes: " + this.getMes() );
+  System.out.println("Año: " + this.getAnio() );
   
 }
   
    public void mostar(){}
+
 }

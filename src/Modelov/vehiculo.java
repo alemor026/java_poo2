@@ -89,4 +89,12 @@ private String placa,chasis,serie,motor,cilindros,marca,modelo,linea,asientos;
     protected void operation(){}
     protected void mostrar (){}
     
+   /* interface Vehiculo {
+
+    public default void llenar() {
+        System.out.println("datos vehiculo");
+    }
+    }*/
 }
+    
+

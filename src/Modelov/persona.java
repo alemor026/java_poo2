@@ -5,13 +5,14 @@
  */
 package Modelov;
 
+
 /**
  *
  * @author Usuaria
  */
 abstract class persona {
-    private String nombre,apellido, direccion;
-    private int telefono, fecha_nacimiento;
+    private String nombre,apellido, direccion,dia, mes, anio;
+    private int telefono;
    
 
     public String getNombre() {
@@ -46,17 +47,42 @@ abstract class persona {
         this.telefono = telefono;
     }
 
-   public int getFecha_nacimiento() {
-        return fecha_nacimiento;
-    }
-
-    public void setFecha_nacimiento(int fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
-    }
+  
    
     protected void agregar(){}
     protected void mostrar(){}
     protected void edad(){}
-
     
+/*interface Persona {
+
+    public default void llenar() {
+        System.out.println("Datos Persona ");
+    }
+    }*/
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
+    public String getMes() {
+        return mes;
+    }
+
+    public void setMes(String mes) {
+        this.mes = mes;
+    }
+
+    public String getAnio() {
+        return anio;
+    }
+
+    public void setAnio(String anio) {
+        this.anio = anio;
+    }
 }
+    
+

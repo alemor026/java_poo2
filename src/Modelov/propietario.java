@@ -11,7 +11,7 @@ package Modelov;
  */
 public class propietario extends persona {
     private String nit;
-    private double cui;
+    private String cui;
 
     public String getNit() {
         return nit;
@@ -21,13 +21,15 @@ public class propietario extends persona {
         this.nit = nit;
     }
 
-    public double getCui() {
+    public String getCui() {
         return cui;
     }
 
-    public void setCui(double cui) {
+    public void setCui(String cui) {
         this.cui = cui;
     }
+
+   
     
     @Override
   public void agregar(){
@@ -37,8 +39,9 @@ public class propietario extends persona {
   System.out.println("Apellido: " + this.getApellido() );
   System.out.println("Direccion: " + this.getDireccion() );
   System.out.println("Telefono: " + this.getTelefono() );
-  System.out.println("Fecha Nacimiento: " + this.getFecha_nacimiento() );
-  
+  System.out.println("Dia: " + this.getDia() );
+  System.out.println("Mes: " + this.getMes() );
+  System.out.println("Año: " + this.getAnio() );
 }
   public void mostar(){}
   
